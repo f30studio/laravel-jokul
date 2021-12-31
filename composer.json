@@ -1,0 +1,31 @@
+{
+  "name": "f30studio/laravel-jokul",
+  "description": "Laravel 8 Jokul Plugins",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fathalfath30",
+      "email": "fathalfath30@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "F30Studio\\LaravelJokul\\": "src"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^7.4",
+    "guzzlehttp/guzzle": "^7.0",
+    "laravel/framework": "^8.75",
+    "mockery/mockery": "^1.4.4",
+    "phpunit/phpunit": "^9.5.10"
+  }
+}
