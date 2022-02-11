@@ -11,7 +11,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "F30Studio\\LaravelJokul\\": "src"
+      "F30Studio\\LaravelJokul\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "F30Studio\\LaravelJokul\\Tests\\": "./tests"
     }
   },
   "config": {
@@ -21,6 +26,13 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "F30Studio\\LaravelJokul\\LaravelJokulServiceProvider"
+      ]
+    }
+  },
   "require": {
     "php": "^7.4",
     "guzzlehttp/guzzle": "^7.0",
